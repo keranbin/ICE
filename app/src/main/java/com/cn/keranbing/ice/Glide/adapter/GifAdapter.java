@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.cn.keranbing.ice.Glide.bean.Gif;
 import com.cn.keranbing.ice.R;
 
@@ -44,6 +46,13 @@ public class GifAdapter extends RecyclerView.Adapter<GifAdapter.GifHolder>{
     public void onBindViewHolder(GifHolder holder, int position) {
         if(holder!=null){
             holder.tv.setText(lists.get(position).getTitle());
+            Glide.with(context)
+                    .load(lists.get(position).getUrl())
+                    .centerCrop()
+                    .placeholder(R.mipmap.ic_launcher)
+                    .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                    .crossFade()
+                    .into(holder.iv);
         }
 
     }

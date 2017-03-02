@@ -18,6 +18,14 @@ allprojects {
         mavenCentral() // jcenter() works as well because it pulls from Maven Central
     }
 }
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
+
+    minSdkVersion = 15
+    targetSdkVersion = 25
+}
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

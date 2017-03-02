@@ -1,4 +1,4 @@
-package com.cn.keranbing.ice.Utils;
+package com.cn.keranbing.ice.Common.Utils;
 
 /**
  * Created by keranbin on 2016/8/10.

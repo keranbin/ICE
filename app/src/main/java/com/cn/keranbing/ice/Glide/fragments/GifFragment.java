@@ -1,11 +1,11 @@
 package com.cn.keranbing.ice.Glide.fragments;
 
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +15,6 @@ import com.cn.keranbing.ice.Glide.bean.Gif;
 import com.cn.keranbing.ice.Glide.common.JsoupUtils;
 import com.cn.keranbing.ice.Glide.views.LoadRecyclerView;
 import com.cn.keranbing.ice.R;
-import com.cn.keranbing.ice.Utils.LogUtil;
 
 import java.util.ArrayList;
 
@@ -61,12 +60,16 @@ public class GifFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         }
 
         ButterKnife.bind(this, view);
+
+
         sr.setColorSchemeResources(
                 R.color.main,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light,
                 android.R.color.holo_green_light);
         sr.setOnRefreshListener(this);
+        // 这句话是为了，第一次进入页面的时候显示加载进度条
+        sr.setProgressViewOffset(false, 0, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 24, getResources().getDisplayMetrics()));
 
         Bundle bundle=getArguments();
         url=bundle.getString("url");
@@ -86,7 +89,6 @@ public class GifFragment extends Fragment implements SwipeRefreshLayout.OnRefres
             public void run() {
                 super.run();
                 lists= JsoupUtils.getGif(url,type);
-                LogUtil.i(TAG, String.valueOf(lists.size()));
                 if(lists.size()>0){
                     if(getActivity()!=null){
                         getActivity().runOnUiThread(new Runnable() {

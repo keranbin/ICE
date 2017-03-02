@@ -3,12 +3,11 @@ package com.cn.keranbing.ice.Glide.common;
 import android.util.Log;
 
 import com.cn.keranbing.ice.Glide.bean.Gif;
-import com.cn.keranbing.ice.Utils.LogUtil;
+import com.cn.keranbing.ice.Common.Utils.LogUtil;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.parser.Tag;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -21,8 +20,6 @@ import java.util.ArrayList;
 
 public class JsoupUtils {
     public final static String TAG="JsoupUtils";
-
-
     /**
      * 抓取网页动态图
      * @param urls

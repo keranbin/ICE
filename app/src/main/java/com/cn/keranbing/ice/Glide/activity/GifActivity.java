@@ -71,7 +71,5 @@ public class GifActivity extends AppCompatActivity {
 
         adapter=new PagerAdapter(getSupportFragmentManager(),lists,str);
         vp.setAdapter(adapter);
-
-
     }
 }

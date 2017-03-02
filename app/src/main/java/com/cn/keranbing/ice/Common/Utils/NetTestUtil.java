@@ -1,4 +1,4 @@
-package com.cn.keranbing.ice.Utils;
+package com.cn.keranbing.ice.Common.Utils;
 
 import android.content.Context;
 import android.content.Intent;

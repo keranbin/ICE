@@ -1,4 +1,4 @@
-package com.cn.keranbing.ice.Utils;
+package com.cn.keranbing.ice.Common.Utils;
 
 import android.os.Environment;
 import android.os.StatFs;

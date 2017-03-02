@@ -1,4 +1,4 @@
-package com.cn.keranbing.ice.Utils;
+package com.cn.keranbing.ice.Common.Utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
