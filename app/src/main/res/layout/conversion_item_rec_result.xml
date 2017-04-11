@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <TableRow android:layout_width="match_parent">
+
+            <com.cn.keranbing.ice.Conversion.views.AlignTextView
+                android:id="@+id/tvLeft"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/etRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请选择项目名称(必填)"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/ivRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/navigation_next_item_dark" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#E5E5E5" />
+    </TableLayout>
+</LinearLayout>

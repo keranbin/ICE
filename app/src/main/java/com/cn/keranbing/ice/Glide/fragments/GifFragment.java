@@ -61,7 +61,6 @@ public class GifFragment extends Fragment implements SwipeRefreshLayout.OnRefres
 
         ButterKnife.bind(this, view);
 
-
         sr.setColorSchemeResources(
                 R.color.main,
                 android.R.color.holo_orange_light,

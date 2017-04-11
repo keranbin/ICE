@@ -31,10 +31,6 @@ public class GifAdapter extends RecyclerView.Adapter<GifAdapter.GifHolder>{
         inflater=LayoutInflater.from(context);
     }
 
-
-
-
-
     @Override
     public GifHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         GifHolder vh=null;
@@ -54,7 +50,6 @@ public class GifAdapter extends RecyclerView.Adapter<GifAdapter.GifHolder>{
                     .crossFade()
                     .into(holder.iv);
         }
-
     }
 
     @Override

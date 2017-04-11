@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="document_type">
+        <item>飞机票</item>
+        <item>火车票</item>
+        <item>出租车票</item>
+        <item>住宿费</item>
+        <item>餐费</item>
+        <item>通讯费</item>
+        <item>办公用品</item>
+        <item>资料复印</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="airline_company">
+        <item>中国国际航空股份有限公司</item>
+        <item>中国邮政航空有限责任公司</item>
+        <item>大新华航空有限公司</item>
+        <item>上海航空股份有限公司</item>
+        <item>春秋航空股份有限公司</item>
+        <item>深圳东海航空有限公司</item>
+        <item>中国南方航空股份有限公司</item>
+        <item>西藏航空有限公司</item>
+        <item>香港华民航空</item>
+    </string-array>
+    <string-array name="arrival_location">
+        <item>北京</item>
+        <item>上海</item>
+        <item>西藏</item>
+        <item>湛江</item>
+        <item>深圳</item>
+        <item>东莞</item>
+        <item>惠州</item>
+        <item>茂名</item>
+        <item>海口</item>
+    </string-array>
+    <string-array name="flight">
+        <item>CZ2332</item>
+        <item>CZ2333</item>
+        <item>CZ2334</item>
+        <item>CZ2335</item>
+        <item>CZ2336</item>
+        <item>CZ2337</item>
+        <item>CZ2338</item>
+        <item>CZ2339</item>
+        <item>CZ2350</item>
+    </string-array>
+    <string-array name="name">
+        <item>张三</item>
+        <item>李四</item>
+        <item>王五</item>
+        <item>小红</item>
+        <item>小明</item>
+        <item>小东</item>
+        <item>小西</item>
+        <item>小南</item>
+        <item>小北</item>
+    </string-array>
+</resources>

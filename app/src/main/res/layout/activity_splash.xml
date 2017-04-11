@@ -13,8 +13,7 @@
         android:background="@drawable/splash" />
     <com.cunoraz.tagview.TagView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        text></com.cunoraz.tagview.TagView>
+        android:layout_height="wrap_content"/>
 
 
 </FrameLayout>

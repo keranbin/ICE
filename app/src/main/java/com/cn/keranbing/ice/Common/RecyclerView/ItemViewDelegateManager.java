@@ -62,8 +62,7 @@ public class ItemViewDelegateManager<T>
         if (indexToRemove >= 0)
         {
             delegates.removeAt(indexToRemove);
-        }
-        return this;
+        }        return this;
     }
 
     public int getItemViewType(T item, int position)
