@@ -104,6 +104,7 @@ public class UploadActivity extends AppCompatActivity {
                 //把参数封装到map中
                 HashMap map = new HashMap<String, String>();
                 map.put("tid", "MultiFileCBS_uploadFile");
+                System.out.print("dfdf");
 
                 List<MultipartBody.Part> bodys=filesToMultipartBodyParts(intentDatas);
 
