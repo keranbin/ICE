@@ -81,8 +81,6 @@
         android:src="@android:drawable/ic_dialog_email"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end" />
-
-
     <include layout="@layout/timeline_content_personal" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -15,11 +15,6 @@
  */
 package tv.danmaku.ijk.media.exo.demo.player;
 
-import android.content.Context;
-import android.media.AudioManager;
-import android.media.MediaCodec;
-import android.net.Uri;
-import android.os.Handler;
 import com.google.android.exoplayer.MediaCodecAudioTrackRenderer;
 import com.google.android.exoplayer.MediaCodecSelector;
 import com.google.android.exoplayer.MediaCodecVideoTrackRenderer;
@@ -34,6 +29,12 @@ import com.google.android.exoplayer.upstream.DataSource;
 import com.google.android.exoplayer.upstream.DefaultAllocator;
 import com.google.android.exoplayer.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer.upstream.DefaultUriDataSource;
+
+import android.content.Context;
+import android.media.AudioManager;
+import android.media.MediaCodec;
+import android.net.Uri;
+import android.os.Handler;
 
 /**
  * A {link RendererBuilder} for streams that can be read using an {link Extractor}.

@@ -43,9 +43,7 @@ public class TimeLineAdapter extends RecyclerView.Adapter{
             View mView = LayoutInflater.from(context).inflate(R.layout.timeline_main_recycleview_item_text, null);
             ViewHolderText viewHolder = new ViewHolderText(mView);
             return viewHolder;
-
         } else if (viewType == Item_Type.RECYCLEVIEW_ITEM_TYPE_2.ordinal()) {
-
             View mView = LayoutInflater.from(context).inflate(R.layout.timeline_main_recycleview_item_gif, null);
             ViewHolderGif viewHolder = new ViewHolderGif(mView);
             return viewHolder;

@@ -15,9 +15,6 @@
  */
 package tv.danmaku.ijk.media.exo.demo;
 
-import android.media.MediaCodec.CryptoException;
-import android.os.SystemClock;
-import android.util.Log;
 import com.google.android.exoplayer.ExoPlayer;
 import com.google.android.exoplayer.MediaCodecTrackRenderer.DecoderInitializationException;
 import com.google.android.exoplayer.TimeRange;
@@ -25,6 +22,11 @@ import com.google.android.exoplayer.audio.AudioTrack;
 import com.google.android.exoplayer.chunk.Format;
 import tv.danmaku.ijk.media.exo.demo.player.DemoPlayer;
 import com.google.android.exoplayer.util.VerboseLogUtil;
+
+import android.media.MediaCodec.CryptoException;
+import android.os.SystemClock;
+import android.util.Log;
+
 import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.Locale;
